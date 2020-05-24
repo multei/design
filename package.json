@@ -1,0 +1,28 @@
+{
+  "name": "@multei/design",
+  "version": "1.0.0",
+  "description": "Design System for Multei!",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multei/design.git"
+  },
+  "keywords": [
+    "multei",
+    "design"
+  ],
+  "author": "Multei!",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/multei/design/issues"
+  },
+  "homepage": "https://github.com/multei/design#readme",
+  "devDependencies": {
+    "lerna": "3.21.0",
+    "prettier": "2.0.5"
+  }
+}

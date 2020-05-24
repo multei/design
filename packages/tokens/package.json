@@ -1,0 +1,44 @@
+{
+  "name": "@multei/tokens",
+  "version": "0.0.0",
+  "description": "Multei! Design System Tokens",
+  "keywords": [
+    "multei",
+    "design",
+    "ds",
+    "tokens"
+  ],
+  "author": "Multei!",
+  "homepage": "https://github.com/multei/design/tree/master/packages/tokens#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multei/design.git"
+  },
+  "scripts": {
+    "stryker": "stryker run",
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/multei/design/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.9.6",
+    "@stryker-mutator/babel-transpiler": "^3.2.4",
+    "@stryker-mutator/core": "^3.2.4",
+    "@stryker-mutator/javascript-mutator": "^3.2.4",
+    "@stryker-mutator/jest-runner": "^3.2.4",
+    "babel-jest": "26.0.1",
+    "jest": "26.0.1",
+    "stryker": "0.35.1",
+    "stryker-cli": "1.0.0"
+  }
+}

@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Lerna temp files
+package.json.lerna_backup
+
+# Stryker files
+.stryker-tmp
+packages/*/reports
+sandbox*
