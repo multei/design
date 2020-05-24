@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "deploy": "lerna publish",
     "test": "lerna run test"
   },
   "repository": {
