@@ -1,5 +1,6 @@
 {
   "name": "@multei/tokens",
+  "private": false,
   "version": "0.0.1-alpha.0",
   "description": "Multei! Design System Tokens",
   "keywords": [
@@ -40,5 +41,6 @@
     "jest": "26.0.1",
     "stryker": "0.35.1",
     "stryker-cli": "1.0.0"
-  }
+  },
+  "gitHead": "1d9bdc151f7860fc915854ffc2c0d6220982a249"
 }
