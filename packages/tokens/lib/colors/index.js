@@ -2,14 +2,15 @@
 
 const colors = {
   black: "#0f1108",
-  blueGreen: "#119DA4",
-  green: "#23CE6B",
+  blue: "#449DD1",
+  green: "#71B340",
+  orange: "#F49F0A",
   purple: "#623CEA",
   red: "#A63446",
   transparentBlack: "hsla(0, 0%, 0%, 0.8)",
   transparentGray: "hsla(0, 0%, 0%, 0.2)",
   white: "#f6f4f3",
-  yellow: "#ffff00",
+  yellow: "#F4FF52",
 };
 
 module.exports = { colors };

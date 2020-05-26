@@ -8,8 +8,9 @@ describe("Color tokens", () => {
   });
   const expectedColors = [
     "black",
-    "blueGreen",
+    "blue",
     "green",
+    "orange",
     "purple",
     "red",
     "transparentBlack",
