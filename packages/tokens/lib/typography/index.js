@@ -1,7 +1,7 @@
 "use strict";
 
 const typography = {
-  fontFamily: [
+  defaultFontFamily: [
     "Overpass",
     '"-apple-system"',
     "BlinkMacSystemFont",

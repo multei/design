@@ -6,9 +6,11 @@ describe("Typography token", () => {
   it("should be an object", () => {
     expect(typography).toBeInstanceOf(Object);
   });
-  describe("font family", () => {
+  describe("default font family", () => {
+    const { defaultFontFamily } = typography;
+
     it("should have Overpass as first font family", () => {
-      expect(typography.fontFamily[0]).toBe("Overpass");
+      expect(defaultFontFamily[0]).toBe("Overpass");
     });
     /**
      * @see https://css-tricks.com/snippets/css/system-font-stack/
@@ -29,12 +31,12 @@ describe("Typography token", () => {
     it.each(nativeFontFamilies)(
       "should support %p as native font family for %p",
       (font) => {
-        expect(typography.fontFamily).toContainEqual(font);
+        expect(defaultFontFamily).toContainEqual(font);
       }
     );
     it("should fallback to sans-serif as last font family", () => {
-      const lastIndex = typography.fontFamily.length - 1;
-      expect(typography.fontFamily[lastIndex]).toBe("sans-serif");
+      const lastIndex = defaultFontFamily.length - 1;
+      expect(defaultFontFamily[lastIndex]).toBe("sans-serif");
     });
   });
 });

@@ -1,16 +1,26 @@
 "use strict";
 
+const { common } = require("./common");
+
 const colors = {
-  black: "#0f1108",
-  blue: "#449DD1",
-  green: "#71B340",
-  orange: "#F49F0A",
-  purple: "#623CEA",
-  red: "#A63446",
-  transparentBlack: "hsla(0, 0%, 0%, 0.8)",
-  transparentGray: "hsla(0, 0%, 0%, 0.2)",
-  white: "#f6f4f3",
-  yellow: "#F4FF52",
+  brand: common.purple,
+  brandContrastText: common.white,
+  common,
+  codeBackground: common.transparentGray,
+  error: common.red,
+  errorContrastText: common.white,
+  info: common.blue,
+  infoContrastText: common.white,
+  markBackground: common.yellow,
+  markContrastText: common.black,
+  paperBackground: common.white,
+  paperBackgroundDark: common.transparentGray,
+  secondary: common.blue,
+  secondaryContrastText: common.white,
+  success: common.green,
+  successContrastText: common.transparentBlack,
+  warning: common.orange,
+  warningContrastText: common.transparentBlack,
 };
 
 module.exports = { colors };
