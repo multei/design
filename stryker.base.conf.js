@@ -4,7 +4,7 @@
 module.exports = {
   mutator: "javascript",
   packageManager: "npm",
-  reporters: ["html", "clear-text", "dashboard"],
+  reporters: ["html", "dashboard"],
   testRunner: "jest",
   transpilers: ["babel"],
   coverageAnalysis: "off",
