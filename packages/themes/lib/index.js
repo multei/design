@@ -1,4 +1,4 @@
-const dark = require("./dark.js");
-const light = require("./light.js");
+import { dark } from "./dark";
+import { light } from "./light";
 
-module.exports = { dark, light };
+export default { dark, light };

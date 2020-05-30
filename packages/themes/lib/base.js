@@ -1,8 +1,6 @@
-"use strict";
+import { color, font } from "@multei/tokens";
 
-const { color, font } = require("@multei/tokens");
-
-const base = {
+export const base = {
   overrides: {
     MuiCssBaseline: {
       "@global": {
@@ -53,5 +51,3 @@ const base = {
     fontFamily: font.family.base.value,
   },
 };
-
-module.exports = { base };

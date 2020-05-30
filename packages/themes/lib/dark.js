@@ -10,9 +10,7 @@ const variations = {
   },
 };
 
-const dark = {
+export const dark = {
   ...base,
   ...variations,
 };
-
-module.exports = { dark };

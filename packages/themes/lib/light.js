@@ -10,9 +10,7 @@ const variations = {
   },
 };
 
-const light = {
+export const light = {
   ...base,
   ...variations,
 };
-
-module.exports = { light };

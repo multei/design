@@ -1,10 +1,11 @@
-const buildPath = "./dist/";
+const buildPath = "./build/";
+const distPath = "./dist/";
 const transformGroup = "js";
 
 const platforms = {
   "assets/copy": {
     actions: ["copy_assets"],
-    buildPath,
+    buildPath: distPath,
     transformGroup: "assets",
   },
   "javascript/module": {
@@ -14,16 +15,6 @@ const platforms = {
         destination: "index.cjs.js",
         format: "javascript/module",
       },
-    ],
-    transformGroup,
-  },
-  "javascript/object": {
-    buildPath,
-    files: [
-      {
-        destination: "index.js",
-        format: "javascript/object"
-      }
     ],
     transformGroup,
   },
@@ -38,19 +29,8 @@ const platforms = {
     transforms: ['name/cti/camel'],
     transformGroup,
   },
-  // "javascript/es6": {
-  //   buildPath,
-  //   files: [
-  //     {
-  //       destination: "index.esm.js",
-  //       format: "javascript/es6",
-  //     },
-  //   ],
-  //   transforms: ['name/cti/camel'],
-  //   transformGroup,
-  // },
   json: {
-    buildPath,
+    buildPath: distPath,
     files: [
       {
         destination: "index.json",
@@ -60,7 +40,7 @@ const platforms = {
     transformGroup,
   },
   "json/asset": {
-    buildPath,
+    buildPath: distPath,
     files: [
       {
         destination: "assets/index.json",

@@ -4,12 +4,15 @@
   "version": "1.0.0-alpha.2",
   "description": "Style Token Dictionary for Multei! Design System",
   "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
   "scripts": {
-    "build": "npm run build-dictionary",
+    "build": "npm run build-dictionary && rollup -c",
     "build-dictionary": "style-dictionary build --config ./config.js",
-    "clean": "style-dictionary clean --config ./config.js && rm -rf ./dist",
+    "clean": "style-dictionary clean --config ./config.js && rm -rf ./build && rm -rf ./dist",
+    "dev": "npm run build-dictionary && rollup -c -w",
     "prepublishOnly": "npm run build",
+    "pretest": "npm run build",
     "stryker": "stryker run",
     "test": "jest --passWithNoTests"
   },
@@ -18,6 +21,7 @@
     "properties"
   ],
   "directories": {
+    "assets": "dist/assets",
     "lib": "dist",
     "test": "__tests__"
   },
@@ -42,12 +46,15 @@
   "homepage": "https://github.com/multei/design/tree/master/packages/tokens#readme",
   "devDependencies": {
     "@babel/preset-env": "7.10.1",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
     "@stryker-mutator/babel-transpiler": "3.2.4",
     "@stryker-mutator/core": "3.2.4",
     "@stryker-mutator/javascript-mutator": "3.2.4",
     "@stryker-mutator/jest-runner": "3.2.4",
     "babel-jest": "26.0.1",
     "jest": "26.0.1",
+    "rollup": "^2.11.2",
     "stryker": "0.35.1",
     "stryker-cli": "1.0.0",
     "style-dictionary": "2.10.0"
