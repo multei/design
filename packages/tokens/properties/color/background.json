@@ -1,0 +1,32 @@
+{
+  "color": {
+    "background": {
+      "code": {
+        "value": "{color.base.gray.transparent.value}"
+      },
+      "error": {
+        "value": "{color.base.red.value}"
+      },
+      "info": {
+        "value": "{color.base.blue.value}"
+      },
+      "mark": {
+        "value": "{color.base.yellow.value}"
+      },
+      "paper": {
+        "light": {
+          "value": "{color.base.white.value}"
+        },
+        "dark": {
+          "value": "{color.base.gray.transparent.value}"
+        }
+      },
+      "success": {
+        "value": "{color.base.green.value}"
+      },
+      "warning": {
+        "value": "{color.base.orange.value}"
+      }
+    }
+  }
+}

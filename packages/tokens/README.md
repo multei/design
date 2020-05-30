@@ -1,11 +1,11 @@
-# `tokens`
+# `@multei/style-dictionary`
 
 > TODO: description
 
 ## Usage
 
 ```
-const tokens = require('tokens');
+const styleDictionary = require('@multei/style-dictionary');
 
 // TODO: DEMONSTRATE API
 ```

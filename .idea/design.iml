@@ -4,6 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/packages/themes/.stryker-tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/.stryker-tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/reports" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>

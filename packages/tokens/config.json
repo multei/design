@@ -1,0 +1,38 @@
+{
+  "source": ["properties/**/*.json"],
+  "platforms": {
+    "assets/copy": {
+      "actions": ["copy_assets"],
+      "buildPath": "./dist/",
+      "transformGroup": "assets"
+    },
+    "js": {
+      "buildPath": "./dist/",
+      "files": [
+        {
+          "destination": "index.js",
+          "format": "javascript/es6"
+        }
+      ],
+      "transformGroup": "js"
+    },
+    "json": {
+      "buildPath": "./dist/json/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "json"
+        }
+      ],
+      "transformGroup": "js"
+    },
+    "json/asset": {
+      "buildPath": "./dist/json/",
+      "files": [{
+        "destination": "assets.json",
+        "format": "json/asset"
+      }],
+      "transformGroup": "web"
+    }
+  }
+}

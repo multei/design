@@ -1,0 +1,12 @@
+{
+  "color": {
+    "font": {
+      "error": {"value": "{color.base.white.value}"},
+      "info": {"value": "{color.base.white.value}"},
+      "primary": {"value": "{color.base.white.value}"},
+      "secondary": {"value": "{color.base.white.value}"},
+      "success": {"value": "{color.base.black.transparent.value}"},
+      "warning": {"value": "{color.base.black.transparent.value}"}
+    }
+  }
+}
