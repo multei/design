@@ -1,6 +1,6 @@
 import { color, font } from "@multei/tokens";
 
-export const base = {
+export const base = ({ palette: { background: paper, type } } = {}) => ({
   overrides: {
     MuiCssBaseline: {
       "@global": {
@@ -17,6 +17,7 @@ export const base = {
   palette: {
     background: {
       default: color.background.default.value,
+      paper,
     },
     common: {
       black: color.base.black.value,
@@ -42,6 +43,7 @@ export const base = {
       main: color.background.success.value,
       contrastText: color.font.success.value,
     },
+    type,
     warning: {
       main: color.background.warning.value,
       contrastText: color.font.warning.value,
@@ -50,4 +52,4 @@ export const base = {
   typography: {
     fontFamily: font.family.base.value,
   },
-};
+});

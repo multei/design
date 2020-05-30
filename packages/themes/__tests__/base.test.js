@@ -1,14 +1,25 @@
+import { color } from "@multei/tokens";
+
 const { base } = require("../lib/base.js");
 
 describe("Base theme", () => {
-  describe("<MuiCssBaseline /> @global overrides", () => {
-    const {
-      overrides: {
-        MuiCssBaseline: {
-          "@global": { code, mark },
-        },
+  const {
+    overrides: {
+      MuiCssBaseline: {
+        "@global": { code, mark },
       },
-    } = base;
+    },
+    palette,
+    typography,
+  } = base({
+    palette: {
+      background: {
+        paper: color.background.default.value,
+      },
+      type: "light",
+    },
+  });
+  describe("<MuiCssBaseline /> @global overrides", () => {
     it("should override <code /> background color", () => {
       expect(code.backgroundColor).toBeDefined();
     });
@@ -18,7 +29,6 @@ describe("Base theme", () => {
     });
   });
   describe("Default palette", () => {
-    const { palette } = base;
     const properties = [
       "error",
       "info",
@@ -41,7 +51,6 @@ describe("Base theme", () => {
   });
   describe("Typography", () => {
     it("should define default font family", () => {
-      const { typography } = base;
       expect(typography.fontFamily).toBeDefined();
     });
   });
