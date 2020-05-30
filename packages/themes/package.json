@@ -1,6 +1,6 @@
 {
   "name": "@multei/themes",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Themes for Multei!",
   "keywords": [
     "themes",
@@ -34,7 +34,7 @@
     "url": "https://github.com/multei/design/issues"
   },
   "dependencies": {
-    "@multei/tokens": "^1.0.0-alpha.1"
+    "@multei/tokens": "^1.0.0-alpha.2"
   },
   "devDependencies": {
     "@babel/preset-env": "7.10.1",
