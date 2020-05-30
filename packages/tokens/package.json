@@ -3,6 +3,28 @@
   "private": false,
   "version": "1.0.0-alpha.1",
   "description": "Style Token Dictionary for Multei! Design System",
+  "main": "dist/index.cjs.js",
+  "browser": "dist/index.umd.js",
+  "scripts": {
+    "build": "npm run build-dictionary",
+    "build-dictionary": "style-dictionary build --config ./config.js",
+    "clean": "style-dictionary clean --config ./config.js && rm -rf ./dist",
+    "prepublishOnly": "npm run build",
+    "stryker": "stryker run",
+    "test": "jest --passWithNoTests"
+  },
+  "files": [
+    "dist",
+    "properties"
+  ],
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multei/design.git"
+  },
   "keywords": [
     "design",
     "dictionary",
@@ -13,35 +35,11 @@
     "tokens"
   ],
   "author": "Multei!",
-  "homepage": "https://github.com/multei/design/tree/master/packages/tokens#readme",
-  "license": "ISC",
-  "main": "dist/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "dist",
-    "properties"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/multei/design.git"
-  },
-  "scripts": {
-    "build": "npm run build-dictionary",
-    "build-dictionary": "style-dictionary build --config ./config.json",
-    "clean": "style-dictionary clean && rm -rf ./dist",
-    "prepublishOnly": "npm run build",
-    "stryker": "stryker run",
-    "test": "jest --passWithNoTests"
-  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/multei/design/issues"
   },
+  "homepage": "https://github.com/multei/design/tree/master/packages/tokens#readme",
   "devDependencies": {
     "@babel/preset-env": "7.10.1",
     "@stryker-mutator/babel-transpiler": "3.2.4",
@@ -51,7 +49,11 @@
     "babel-jest": "26.0.1",
     "jest": "26.0.1",
     "stryker": "0.35.1",
-    "stryker-cli": "1.0.0"
+    "stryker-cli": "1.0.0",
+    "style-dictionary": "2.10.0"
   },
-  "gitHead": "98f8f7d213f49d27651725fb462acaf26fec1510"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "8359bab45804570e46c5c386f448e26415e5deb6"
 }

@@ -1,53 +1,56 @@
 "use strict";
 
-const { colors, typography } = require("@multei/tokens");
+const { color, font } = require("@multei/tokens");
 
 const base = {
   overrides: {
     MuiCssBaseline: {
       "@global": {
         code: {
-          backgroundColor: colors.codeBackground,
+          backgroundColor: color.background.code.value,
         },
         mark: {
-          backgroundColor: colors.markBackground,
-          color: colors.markContrastText,
+          backgroundColor: color.background.mark.value,
+          color: color.font.mark.value,
         },
       },
     },
   },
   palette: {
     background: {
-      default: colors.brand,
+      default: color.background.default.value,
     },
-    common: colors.common,
+    common: {
+      black: color.base.black.value,
+      white: color.base.white.value,
+    },
     error: {
-      main: colors.error,
-      contrastText: colors.errorContrastText,
+      main: color.background.error.value,
+      contrastText: color.font.error.value,
     },
     info: {
-      main: colors.info,
-      contrastText: colors.infoContrastText,
+      main: color.background.info.value,
+      contrastText: color.font.info.value,
     },
     primary: {
-      main: colors.brand,
-      contrastText: colors.brandContrastText,
+      main: color.brand.primary.value,
+      contrastText: color.font.primary.value,
     },
     secondary: {
-      main: colors.secondary,
-      contrastText: colors.secondaryContrastText,
+      main: color.brand.secondary.value,
+      contrastText: color.font.secondary.value,
     },
     success: {
-      main: colors.success,
-      contrastText: colors.successContrastText,
+      main: color.background.success.value,
+      contrastText: color.font.success.value,
     },
     warning: {
-      main: colors.warning,
-      contrastText: colors.warningContrastText,
+      main: color.background.warning.value,
+      contrastText: color.font.warning.value,
     },
   },
   typography: {
-    fontFamily: typography.defaultFontFamily,
+    fontFamily: font.family.base.value,
   },
 };
 

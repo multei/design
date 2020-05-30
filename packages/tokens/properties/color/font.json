@@ -3,6 +3,7 @@
     "font": {
       "error": {"value": "{color.base.white.value}"},
       "info": {"value": "{color.base.white.value}"},
+      "mark": {"value":"{color.base.black.opaque.value}"},
       "primary": {"value": "{color.base.white.value}"},
       "secondary": {"value": "{color.base.white.value}"},
       "success": {"value": "{color.base.black.transparent.value}"},

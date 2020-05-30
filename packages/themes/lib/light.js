@@ -1,10 +1,10 @@
-import { colors } from "@multei/tokens";
+import { color } from "@multei/tokens";
 import { base } from "./base";
 
 const variations = {
   palette: {
     background: {
-      paper: colors.paperBackground,
+      paper: color.background.default.value,
     },
     type: "light",
   },

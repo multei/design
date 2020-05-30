@@ -4,6 +4,9 @@
       "code": {
         "value": "{color.base.gray.transparent.value}"
       },
+      "default": {
+        "value": "{color.base.purple.value}"
+      },
       "error": {
         "value": "{color.base.red.value}"
       },
