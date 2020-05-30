@@ -37,8 +37,7 @@
     "clean": "style-dictionary clean && rm -rf ./dist",
     "prepublishOnly": "npm run build",
     "stryker": "stryker run",
-    "test": "jest --passWithNoTests",
-    "version": "style-dictionary --version"
+    "test": "jest --passWithNoTests"
   },
   "bugs": {
     "url": "https://github.com/multei/design/issues"
