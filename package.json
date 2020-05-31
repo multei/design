@@ -1,6 +1,6 @@
 {
   "name": "@multei/design",
-  "version": "1.0.0",
+  "private": true
   "description": "Design System for Multei!",
   "main": "index.js",
   "scripts": {

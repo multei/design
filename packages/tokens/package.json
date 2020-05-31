@@ -10,11 +10,15 @@
     "build": "npm run build-dictionary && rollup -c",
     "build-dictionary": "style-dictionary build --config ./config.js",
     "clean": "style-dictionary clean --config ./config.js && rm -rf ./build && rm -rf ./dist",
-    "dev": "npm run build-dictionary && rollup -c -w",
-    "prepublishOnly": "npm run build",
+    "dev": "npm run develop",
+    "develop": "npm run build-dictionary && rollup -c -w",
+    "prepare": "npm run build",
     "pretest": "npm run build",
+    "preversion": "npm test",
+    "start": "npm run develop",
     "stryker": "stryker run",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "version": "npm run build"
   },
   "files": [
     "dist",
