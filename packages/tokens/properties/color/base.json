@@ -2,25 +2,13 @@
   "color": {
     "base": {
       "black": {
-        "opaque": {
-          "value": "#0f1108"
-        },
-        "transparent": {
-          "value": {"r": 0, "g": 0, "b": 0, "a": 0.8}
-        }
+        "value": "#0f1108"
       },
       "blue": {
         "value": "#5887FF"
       },
-      "blueGreen": {
-        "deprecated": true,
-        "deprecated_comment": "replace with the \"blue\" color",
-        "value": "#119DA4"
-      },
       "gray": {
-        "transparent": {
-          "value": {"r": 0, "g": 0, "b": 0, "a": 0.2}
-        }
+        "value": "#3C493F"
       },
       "green": {
         "value": "#71B340"

@@ -1,4 +1,3 @@
-import { color } from "@multei/tokens";
 import { light } from "../lib/light";
 
 describe("Light theme", () => {
@@ -15,9 +14,6 @@ describe("Light theme", () => {
     } = light;
     it("should be defined", () => {
       expect(background.paper).toBeDefined();
-    });
-    it("should not be equal to brand background color", () => {
-      expect(background.paper).not.toBe(color.background.default.value);
     });
   });
 });

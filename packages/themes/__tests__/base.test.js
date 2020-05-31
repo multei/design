@@ -1,6 +1,4 @@
-import { color } from "@multei/tokens";
-
-const { base } = require("../lib/base.js");
+import { base } from "../lib/base.js";
 
 describe("Base theme", () => {
   const {
@@ -14,7 +12,7 @@ describe("Base theme", () => {
   } = base({
     palette: {
       background: {
-        paper: color.background.default.value,
+        paper: "",
       },
       type: "light",
     },

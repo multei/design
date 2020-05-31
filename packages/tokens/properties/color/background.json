@@ -2,7 +2,7 @@
   "color": {
     "background": {
       "code": {
-        "value": "{color.base.gray.transparent.value}"
+        "value": "{color.base.gray.value}"
       },
       "default": {
         "value": "{color.base.purple.medium.value}"

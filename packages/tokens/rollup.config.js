@@ -6,20 +6,20 @@ import commonjs from "@rollup/plugin-commonjs";
 export default base({
   cjs: {
     external: ["@multei/tokens"],
-    input: "build/index.cjs.js",
+    input: "build/index.js",
     output: {
       file: pkg.main,
     },
   },
   es: {
     external: ["@multei/tokens"],
-    input: "build/index.cjs.js",
+    input: "build/index.js",
     output: {
       file: pkg.module,
     },
   },
   umd: {
-    input: "build/index.umd.js",
+    input: "build/index.js",
     plugins: [nodeResolve(), commonjs()],
     output: {
       file: pkg.browser,

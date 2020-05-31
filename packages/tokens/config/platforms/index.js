@@ -8,26 +8,14 @@ const platforms = {
     buildPath: distPath,
     transformGroup: "assets",
   },
-  "javascript/module": {
+  "javascript/es6": {
     buildPath,
-    files: [
-      {
-        destination: "index.cjs.js",
-        format: "javascript/module",
-      },
-    ],
-    transformGroup,
-  },
-  "javascript/umd": {
-    buildPath,
-    files: [
-      {
-        destination: "index.umd.js",
-        format: "javascript/umd",
-      },
-    ],
+    files: [{
+      destination: "index.js",
+      format: "javascript/es6",
+    },],
     transforms: ['name/cti/camel'],
-    transformGroup,
+    transformGroup
   },
   json: {
     buildPath: distPath,

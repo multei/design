@@ -1,4 +1,24 @@
-import { color, font } from "@multei/tokens";
+import {
+  colorBackgroundCode,
+  colorBackgroundDefault,
+  colorBackgroundError,
+  colorBackgroundInfo,
+  colorBackgroundMark,
+  colorBackgroundSuccess,
+  colorBackgroundWarning,
+  colorBaseBlack,
+  colorBaseWhite,
+  colorBrandPrimary,
+  colorBrandSecondary,
+  colorFontError,
+  colorFontInfo,
+  colorFontMark,
+  colorFontPrimary,
+  colorFontSecondary,
+  colorFontSuccess,
+  colorFontWarning,
+  fontFamilyBase,
+} from "@multei/tokens";
 
 export const base = ({
   palette: {
@@ -10,51 +30,51 @@ export const base = ({
     MuiCssBaseline: {
       "@global": {
         code: {
-          backgroundColor: color.background.code.value,
+          backgroundColor: colorBackgroundCode,
         },
         mark: {
-          backgroundColor: color.background.mark.value,
-          color: color.font.mark.value,
+          backgroundColor: colorBackgroundMark,
+          color: colorFontMark,
         },
       },
     },
   },
   palette: {
     background: {
-      default: color.background.default.value,
+      default: colorBackgroundDefault,
       paper,
     },
     common: {
-      black: color.base.black.opaque.value,
-      white: color.base.white.value,
+      black: colorBaseBlack,
+      white: colorBaseWhite,
     },
     error: {
-      main: color.background.error.value,
-      contrastText: color.font.error.value,
+      main: colorBackgroundError,
+      contrastText: colorFontError,
     },
     info: {
-      main: color.background.info.value,
-      contrastText: color.font.info.value,
+      main: colorBackgroundInfo,
+      contrastText: colorFontInfo,
     },
     primary: {
-      main: color.brand.primary.value,
-      contrastText: color.font.primary.value,
+      main: colorBrandPrimary,
+      contrastText: colorFontPrimary,
     },
     secondary: {
-      main: color.brand.secondary.value,
-      contrastText: color.font.secondary.value,
+      main: colorBrandSecondary,
+      contrastText: colorFontSecondary,
     },
     success: {
-      main: color.background.success.value,
-      contrastText: color.font.success.value,
+      main: colorBackgroundSuccess,
+      contrastText: colorFontSuccess,
     },
     type,
     warning: {
-      main: color.background.warning.value,
-      contrastText: color.font.warning.value,
+      main: colorBackgroundWarning,
+      contrastText: colorFontWarning,
     },
   },
   typography: {
-    fontFamily: font.family.base.value,
+    fontFamily: fontFamilyBase,
   },
 });
