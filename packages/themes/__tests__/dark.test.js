@@ -9,8 +9,16 @@ describe("Dark theme", () => {
     expect(type).toBe("dark");
   });
 
-  it("should set paper background color", () => {
-    expect(background.paper).toBeDefined();
+  describe("Paper background color", () => {
+    it("should be defined", () => {
+      expect(background.paper).toBeDefined();
+    });
+    it("should not be a zero black", () => {
+      expect(background.paper).not.toBe("#000");
+      expect(background.paper).not.toBe("#000000");
+      expect(background.paper).not.toBe("#00000000");
+      expect(background.paper).not.toBe("black");
+    });
   });
 
   describe("Common palette", () => {
@@ -21,11 +29,8 @@ describe("Dark theme", () => {
 
       it("should not be a zero black", () => {
         expect(common.black).not.toBe("#000");
-
         expect(common.black).not.toBe("#000000");
-
         expect(common.black).not.toBe("#00000000");
-
         expect(common.black).not.toBe("black");
       });
     });
