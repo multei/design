@@ -3,7 +3,7 @@ import { color, font } from "@multei/tokens";
 export const base = ({
   palette: {
     background: { paper },
-    type = "light",
+    type,
   },
 }) => ({
   overrides: {

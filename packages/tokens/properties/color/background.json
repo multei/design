@@ -5,7 +5,7 @@
         "value": "{color.base.gray.transparent.value}"
       },
       "default": {
-        "value": "{color.base.purple.value}"
+        "value": "{color.base.purple.medium.value}"
       },
       "error": {
         "value": "{color.base.red.value}"
@@ -21,7 +21,7 @@
           "value": "{color.base.white.value}"
         },
         "dark": {
-          "value": "{color.base.gray.transparent.value}"
+          "value": "{color.base.purple.dark.value}"
         }
       },
       "success": {

@@ -1,4 +1,5 @@
-const { light } = require("../lib/light.js");
+import { color } from "@multei/tokens";
+import { light } from "../lib/light";
 
 describe("Light theme", () => {
   it("should set palette type to light", () => {
@@ -7,10 +8,16 @@ describe("Light theme", () => {
     } = light;
     expect(type).toBe("light");
   });
-  it("should set paper background color", () => {
+
+  describe("Paper background color", () => {
     const {
       palette: { background },
     } = light;
-    expect(background.paper).toBeDefined();
+    it("should be defined", () => {
+      expect(background.paper).toBeDefined();
+    });
+    it("should not be equal to brand background color", () => {
+      expect(background.paper).not.toBe(color.background.default.value);
+    });
   });
 });

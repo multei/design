@@ -10,7 +10,7 @@
         }
       },
       "blue": {
-        "value": "#449DD1"
+        "value": "#5887FF"
       },
       "blueGreen": {
         "deprecated": true,
@@ -29,7 +29,12 @@
         "value": "#F49F0A"
       },
       "purple": {
-        "value": "#623CEA"
+        "medium": {
+          "value": "#623CEA"
+        },
+        "dark": {
+          "value": "#140C2F"
+        }
       },
       "red": {
         "value": "#A63446"
