@@ -1,8 +1,13 @@
 {
   "name": "@multei/design",
   "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/themes",
+      "packages/tokens"
+    ]
+  },
   "description": "Design System for Multei!",
-  "main": "index.js",
   "scripts": {
     "build": "lerna run build",
     "bootstrap": "npm run lerna:install",
