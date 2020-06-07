@@ -6,6 +6,7 @@
   "scripts": {
     "build": "lerna run build",
     "bootstrap": "npm run lerna:install",
+    "commit": "git cz",
     "deploy": "lerna publish",
     "lerna:install": "lerna bootstrap",
     "postinstall": "npm run lerna:install",
@@ -29,11 +30,21 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "commitizen": "4.1.2",
-    "cz-lerna-changelog": "2.0.2",
+    "cz-lerna-changelog": "^2.0.2",
     "husky": "4.2.5",
     "lerna": "3.22.0",
     "prettier": "2.0.5",
     "semantic-release": "17.0.8",
     "semantic-release-monorepo": "7.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
