@@ -3,6 +3,8 @@
   "assignees": ["jimmyandrade"],
   "enabled": true,
   "labels": ["dependencies", "renovate"],
+  "masterIssue": true,
+  "masterIssueAutoclose": true,
   "packageRules": [
     {
       "updateTypes": ["major"],
