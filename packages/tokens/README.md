@@ -1,11 +1,15 @@
-# `@multei/style-dictionary`
+# Multei! Style Tokens
 
 > TODO: description
 
-## Usage
+## Install
 
+```shell script
+npm install @multei/tokens
 ```
-const styleDictionary = require('@multei/style-dictionary');
 
-// TODO: DEMONSTRATE API
+## Use
+
+```javascript
+import { colorBackgroundPaperDark } from "@multei/tokens";
 ```
