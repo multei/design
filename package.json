@@ -4,8 +4,10 @@
   "description": "Design System for Multei!",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "npm run lerna:install",
     "deploy": "lerna publish",
+    "lerna:install": "lerna bootstrap",
+    "postinstall": "npm run lerna:install",
     "test": "lerna run test"
   },
   "repository": {
