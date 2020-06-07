@@ -1,0 +1,15 @@
+branches:
+  only:
+    - master
+    - /^v?\d+\.\d+(\.\d+)?(-\S*)?$/
+language: node_js
+jobs:
+  include:
+    - stage: release
+      node_js: lts/*
+      deploy:
+        provider: script
+        script:
+          - npx semantic-release
+node_js:
+  - node

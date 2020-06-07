@@ -16,6 +16,7 @@
     "husky:prepush": "npm run test",
     "lerna:install": "lerna bootstrap",
     "postinstall": "npm run lerna:install",
+    "semantic-release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "test": "lerna run test"
   },
   "repository": {
