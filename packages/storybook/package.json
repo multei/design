@@ -14,8 +14,7 @@
     "url": "git+https://github.com/multei/design.git"
   },
   "scripts": {
-    "build": "build-storybook",
-    "build:ci": "build-storybook -c .storybook -o .out",
+    "build": "build-storybook -c .storybook -o dist",
     "develop": "start-storybook -p 6006",
     "pretest": "npm run build",
     "start": "npm run develop",
