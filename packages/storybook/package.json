@@ -31,6 +31,6 @@
     "@storybook/addons": "6.0.28",
     "@storybook/react": "6.0.28",
     "babel-loader": "8.2.2",
-    "react": "17.0.1"
+    "react": "17.0.2"
   }
 }
