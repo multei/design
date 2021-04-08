@@ -49,7 +49,7 @@
   },
   "homepage": "https://github.com/multei/design/tree/master/packages/tokens#readme",
   "devDependencies": {
-    "@babel/preset-env": "7.13.12",
+    "@babel/preset-env": "7.13.15",
     "@rollup/plugin-commonjs": "15.1.0",
     "@rollup/plugin-node-resolve": "10.0.0",
     "@stryker-mutator/babel-transpiler": "4.0.0",
