@@ -58,7 +58,7 @@
     "@stryker-mutator/jest-runner": "5.0.1",
     "babel-jest": "27.0.1",
     "jest": "27.0.1",
-    "rollup": "2.50.3",
+    "rollup": "2.50.4",
     "stryker": "0.35.1",
     "stryker-cli": "1.0.1",
     "style-dictionary": "3.0.0"
