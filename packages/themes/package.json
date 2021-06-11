@@ -58,7 +58,7 @@
     "jest": "27.0.4",
     "rollup": "2.51.2",
     "stryker": "0.35.1",
-    "stryker-cli": "1.0.1"
+    "stryker-cli": "1.0.2"
   },
   "gitHead": "8359bab45804570e46c5c386f448e26415e5deb6"
 }
