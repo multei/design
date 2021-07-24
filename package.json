@@ -34,8 +34,8 @@
   },
   "homepage": "https://github.com/multei/design#readme",
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
     "commitizen": "4.2.4",
     "cz-lerna-changelog": "2.0.3",
     "husky": "7.0.1",
