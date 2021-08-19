@@ -3,18 +3,20 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/themes/.stryker-tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/themes/coverage" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/themes/dist" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/themes/reports" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/.stryker-tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/build" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/config/platforms" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/coverage" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/dist" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/reports" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/themes/.stryker-tmp" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/themes/coverage" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/themes/dist" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/themes/reports" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/tokens/.stryker-tmp" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/tokens/build" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/tokens/coverage" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/tokens/dist" />
+      <excludeFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/Multei! Design/packages/tokens/reports" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/config/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tokens/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

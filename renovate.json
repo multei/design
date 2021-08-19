@@ -15,7 +15,7 @@
       "automerge": true
     }
   ],
-  "semanticCommits": true,
+  "semanticCommits": "enabled",
   "unicodeEmoji": true,
   "updateLockFiles": true
 }

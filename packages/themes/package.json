@@ -1,44 +1,38 @@
 {
   "name": "@multei/themes",
   "version": "1.0.0-alpha.9",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "browser": "dist/index.umd.js",
   "description": "Themes for Multei!",
   "keywords": [
     "themes",
     "multei",
     "design",
-    "system"
+    "ds"
   ],
-  "author": "Jimmy Andrade <jimmy.andrade@thoughtworks.com>",
-  "homepage": "https://github.com/multei/design/tree/master/packages/themes#readme",
-  "license": "ISC",
-  "files": [
-    "dist"
-  ],
+  "author": "Multei!",
+  "homepage": "https://github.com/multei/design/tree/main/packages/themes#readme",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "files": [
+    "dist"
+  ],
   "repository": {
+    "directory": "packages/themes",
     "type": "git",
     "url": "git+https://github.com/multei/design.git"
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "npm run develop",
-    "develop": "rollup -c -w",
-    "prepare": "npm run build",
+    "dev": "rollup -c -w",
+    "develop": "npm run dev",
     "pretest": "npm run build",
-    "preversion": "npm test",
-    "start": "npm run develop",
-    "stryker": "stryker run",
-    "test": "jest",
-    "version": "npm run build"
+    "start": "npm run dev",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/multei/design/issues"
@@ -46,19 +40,8 @@
   "dependencies": {
     "@multei/tokens": "^1.0.0-alpha.9"
   },
-  "devDependencies": {
-    "@babel/preset-env": "7.13.15",
-    "@rollup/plugin-commonjs": "15.1.0",
-    "@rollup/plugin-node-resolve": "10.0.0",
-    "@stryker-mutator/babel-transpiler": "4.0.0",
-    "@stryker-mutator/core": "4.6.0",
-    "@stryker-mutator/javascript-mutator": "4.0.0",
-    "@stryker-mutator/jest-runner": "4.6.0",
-    "babel-jest": "26.6.3",
-    "jest": "26.6.3",
-    "rollup": "2.45.2",
-    "stryker": "0.35.1",
-    "stryker-cli": "1.0.0"
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "8359bab45804570e46c5c386f448e26415e5deb6"
 }

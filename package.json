@@ -7,16 +7,17 @@
       "packages/tokens"
     ]
   },
-  "description": "Design System for Multei!",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-typescript": "latest",
+    "jest": "latest",
+    "lerna": "latest",
+    "style-dictionary": "next"
+  },
+  "description": "Multei! Design System",
+  "main": "index.js",
   "scripts": {
-    "build": "lerna run build",
-    "bootstrap": "npm run lerna:install",
-    "commit": "git cz",
-    "deploy": "lerna publish",
-    "husky:prepush": "npm run test",
-    "lerna:install": "lerna bootstrap",
-    "postinstall": "npm run lerna:install",
-    "semantic-release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "test": "lerna run test"
   },
   "repository": {
@@ -28,30 +29,9 @@
     "design"
   ],
   "author": "Multei!",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/multei/design/issues"
   },
-  "homepage": "https://github.com/multei/design#readme",
-  "devDependencies": {
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "commitizen": "4.2.3",
-    "cz-lerna-changelog": "2.0.3",
-    "husky": "4.3.8",
-    "lerna": "3.22.1",
-    "semantic-release": "17.4.2",
-    "semantic-release-monorepo": "7.0.4"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm run husky:prepush"
-    }
-  }
+  "homepage": "https://github.com/multei/design#readme"
 }

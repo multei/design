@@ -1,14 +1,3 @@
 language: node_js
-jobs:
-  include:
-    - stage: release
-      node_js: lts/*
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npm run semantic-release
-        on:
-          all_branches: true
 node_js:
   - node

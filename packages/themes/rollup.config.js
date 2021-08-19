@@ -1,9 +1,10 @@
-import { base } from "../../rollup.base.config.js";
+import {base} from "../../rollup.base.config.js";
 import pkg from "./package.json";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import typescript from "@rollup/plugin-typescript";
 
-const input = "lib/index.js";
+const input = "src/index.ts";
 
 export default base({
   cjs: {
@@ -12,6 +13,7 @@ export default base({
     output: {
       file: pkg.main,
     },
+    plugins: [typescript()]
   },
   es: {
     external: ["@multei/tokens"],
@@ -19,10 +21,11 @@ export default base({
     output: {
       file: pkg.module,
     },
+    plugins: [typescript()]
   },
   umd: {
     input,
-    plugins: [nodeResolve(), commonjs()],
+    plugins: [typescript(), nodeResolve(), commonjs()],
     output: {
       file: pkg.browser,
     },
