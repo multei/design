@@ -41,7 +41,7 @@
     "husky": "7.0.2",
     "lerna": "4.0.0",
     "semantic-release": "17.4.7",
-    "semantic-release-monorepo": "7.0.5"
+    "semantic-release-monorepo": "7.0.8"
   },
   "config": {
     "commitizen": {
