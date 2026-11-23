@@ -30,7 +30,7 @@
     "@storybook/addon-links": "6.5.16",
     "@storybook/addons": "6.5.16",
     "@storybook/react": "6.5.16",
-    "babel-loader": "8.2.2",
+    "babel-loader": "8.4.1",
     "react": "17.0.2"
   }
 }
